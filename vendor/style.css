@@ -1,0 +1,137 @@
+#grad1 {   
+  height: 100vh;  
+  background-color: #212528; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#212628,whitesmoke);
+}
+blink {
+        animation: blinker 1s linear infinite;
+       }
+        @keyframes blinker {  
+        50% { opacity: 0; }
+       }
+
+.typewriter {
+    font-family: Courier, monospace;
+    display: inline-block;
+}
+.typewriter-text {
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 38px;
+    font-weight: 700;
+    border-right: 4px solid #708238;
+    box-sizing: border-box;
+}
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }    
+}
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: #708238 ; 
+    }
+}
+
+
+canvas {
+    background-color: grey; /* For browsers that do not support gradients */
+  /*background-image: linear-gradient(whitesmoke,#212628);  */     /* Standard syntax (must be last) */  
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.wrapper {
+	max-width: 600px;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	padding: 2%;	
+        background-color: #212528; /* For browsers that do not support gradients */
+        background-image: linear-gradient(whitesmoke,#212628); /* Standard syntax (must be last) */  
+	height: 500px;
+}
+
+h1 {
+    color: #ecf0f1;
+}
+
+h1 + p {
+	margin-bottom: 5%;
+    color: #3498db;
+}
+
+.scoreWrap {float: left;}
+.timeWrap {float: right;}
+
+.outerWrap:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.bg {
+	background-color: #8b0000;
+}
+
+
+button {
+  border: none;
+  background-color: #FF7373;  
+  outline: none;  
+  padding: 10px 15px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+
+.scoreWrap p, .scoreWrap span, .timeWrap p, .timeWrap span {
+    font-size: 30px;
+    color: #8b0000;
+}
+
+.wordsWrap {
+	margin-top: 50px;
+}
+
+.words span{
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: #ECF0F1;
+}

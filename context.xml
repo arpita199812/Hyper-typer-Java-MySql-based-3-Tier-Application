@@ -1,0 +1,37 @@
+<Context>
+
+  <Resource name="jdbc/mkyongdb" auth="Container" type="javax.sql.DataSource"
+               maxActive="50" maxIdle="30" maxWait="10000"
+               username="root" password="" 
+               driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://localhost:3306/mkyongdb"/>
+
+</Context>
+
+<Context>
+<Resource name="jdbc/ht"
+
+
+auth="Container"
+
+
+type="javax.sql.DataSource"
+
+
+username="root"
+
+
+password=""
+
+
+driverClassName="com.mysql.jdbc.Driver"
+
+
+url="jdbc:mysql:/localhost:3306/ht"
+
+
+maxActive="15"
+
+maxIdle="3"/>
+
+</Context>

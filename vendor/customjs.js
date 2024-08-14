@@ -17,6 +17,7 @@ function checkExist()
         alert("unable to connect to server");
     }
 }
+
 function g1s(score)
 {
 

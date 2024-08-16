@@ -79,7 +79,7 @@ $('#password, #confirm_Password').on('keyup', function () {
 	Statement st;
 	
 		Class.forName("com.mysql.jdbc.Driver");	
-		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ht","root","");
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ht","root","password");
 		st=con.createStatement();
 		String sql="insert into login(name,username,password) values('"+name+"','"+username+"','"+password+"')";
                 int res=st.executeUpdate(sql);

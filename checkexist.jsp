@@ -9,7 +9,7 @@
 <%
     try{
         Class.forName("com.mysql.jdbc.Driver");
-        Connection con =(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/ht", "root", "");
+        Connection con =(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/ht", "root", "password");
             PreparedStatement ps = con.prepareStatement("SELECT  * FROM login WHERE " + "username = ?");
             ps.setString(1,request.getParameter("username"));
             ResultSet res = ps.executeQuery();

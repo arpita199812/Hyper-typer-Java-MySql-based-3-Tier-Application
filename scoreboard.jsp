@@ -36,8 +36,8 @@
                 try
                 {
                 Class.forName("com.mysql.jdbc.Driver");	
-		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ht","root","");
-                con2 = DriverManager.getConnection("jdbc:mysql://localhost:3306/ht","root","");
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ht","root","password");
+                con2 = DriverManager.getConnection("jdbc:mysql://localhost:3306/ht","root","password");
 		st=con.createStatement();
                 st2=con.createStatement();
 		String sql="SELECT Name, username, Score FROM login WHERE Score = (SELECT MAX(Score) FROM login)";

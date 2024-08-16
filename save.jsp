@@ -16,7 +16,7 @@
 	Statement st;
 	
 		Class.forName("com.mysql.jdbc.Driver");	
-		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ht","root","");
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ht","root","password");
 		st=con.createStatement();
 		String sql="UPDATE login SET "+pag+"='"+score+"' WHERE username = '"+username+"'";
                 st.executeUpdate(sql);
